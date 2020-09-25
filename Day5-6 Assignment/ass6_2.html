@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        .data{
+            height:500px;
+        width:80%;
+        background-color:rgb(184, 238, 171);
+        margin-top: 50px;
+        margin-left:150px;
+        margin-right:80px;
+        padding: 20px;  
+        
+         
+        }
+        input{
+            height:50px;
+        text-indent :20px;
+        }
+        button{
+            margin-left: 60px;
+            height:50px;
+    }
+    table{
+        width:100%;
+        margin-top:20px;
+    }
+
+    th,
+    td{
+        height:40px;
+        text-align:center;
+        padding-left: 20px;
+
+    }
+    h1{
+        margin-top: 30px;
+        text-align: center;
+       
+    }
+    .searchBox{
+        margin-top: 20px;
+    }
+    
+    </style>
+
+
+<body>
+    <h1>BUS MANAGEMENT</h1>
+     <div class="data">
+        
+        <div class="form">
+            <form onsubmit="addBus(event)">
+           
+                <input type="text" required placeholder="Enter Name" id="name"/>
+                <input type="text" required placeholder="Source" id="source"/>
+                <input type="text"  required placeholder="Destination" id="destination"/>
+                <input type="number" required placeholder="Number"id="number"/>
+                <input type="number" required placeholder="Passenger Capacity"id="passangerCap"/>
+                <button type="submit" >Add Employee</button>
+            </form>
+         </div>
+         <div class="searchBox">
+            
+            <input type="text" id="searchSource"  onkeyup="searchBySource()" placeholder="Search By Source"/>
+            <input type="text" id="searchDestination" onkeyup="searchByDestination()" placeholder="Search By Destination"/>
+         </div>
+         
+
+         <table border="1" class="table">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Number</th> 
+                    <th>Passanger Capacity</th>
+                    <th>Actions</th>
+                    </tr>
+                
+            </thead>
+            <tbody class="tdata">
+                
+            </tbody>
+
+        </table>
+         
+     </div>
+
+
+
+
+
+
+
+    <script src="ass6_2.js"></script>
+</body>
+</html>
+
